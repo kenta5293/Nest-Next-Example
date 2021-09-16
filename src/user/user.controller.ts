@@ -8,7 +8,7 @@ export class UserController {
 
   @Render("user/user-list")
   @Get()
-  userList(): User[] {
+  userList() {
     const users = this.userService.getUsers();
     return { users };
   }
