@@ -1,18 +1,13 @@
 import { Module } from "@nestjs/common";
 import { RenderModule } from "nest-next";
-import Next from "next";
 import { AppController } from "./app.controller";
+import { UserModule } from "./user/user.module";
 
 @Module({
   imports: [
-    RenderModule.forRootAsync(
-      Next({
-        dev: process.env.NODE_ENV !== "production",
-        conf: { useFilesystemPublicRoutes: false },
-      })
-    ),
+    RenderModule,
+    UserModule, // UserModule 추가
   ],
   controllers: [AppController],
-  providers: [],
 })
 export class AppModule {}
