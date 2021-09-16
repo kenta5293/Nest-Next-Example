@@ -11,7 +11,7 @@ export class AppController {
 }
 
 /*
-Server code [Nest.js]
+💡 Server code [Nest.js]
  * 외부로 부터 들어오는 요청은 Controller 인 AppController 에서 처리한다.
 
 1. @Render() Decorator를 사용하여 어떤 페이지를 렌더링 할 지를 지정한다.
