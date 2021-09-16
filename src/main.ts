@@ -24,7 +24,7 @@ async function bootstrap() {
 bootstrap();
 
 /*
-main.ts
+💡 main.ts
 
 npm dev 를 실행하면 /src/main.ts 가 실행된다.
 정확히는 main.ts의 bootstrap 함수가 실행되며, 이 함수에서 Nest.js app 과 Next.js app을 생성하고, 
